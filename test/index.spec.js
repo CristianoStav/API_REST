@@ -43,6 +43,7 @@ describe('Test Routes', () => {
 
   describe('Test, /sing-in route', () => {
     const { email, senha } = fixtures.user;
+
     it('return success', (done) => {
       chai.request(app).post('/sing-in')
         .send({ email, senha })
@@ -75,6 +76,7 @@ describe('Test Routes', () => {
 
   describe('Test /user route', () => {
     const { expiredUser } = fixtures;
+
     it('return "Nao autorizado" when not have token', (done) => {
       const { _id } = persistedUser;
       chai.request(app).get(`/user/${_id}`)

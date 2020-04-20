@@ -9,8 +9,6 @@ export default class SingUpController {
     const user = req.body;
     const { email } = user;
 
-
-    console.log('USER', user.senha);
     try {
       const dbUser = await skyUserRepository.findUserByEmail(email);
 

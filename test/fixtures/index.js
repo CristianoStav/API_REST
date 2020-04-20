@@ -13,7 +13,7 @@ const fixtures = {
 
   expiredUser: {
     nome: 'cris',
-    email: 'crizu@hoyy.com',
+    email: 'crisStav@hoyy.com',
     senha: 'senha123',
     telefones: [
       {

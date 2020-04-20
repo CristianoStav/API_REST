@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createServer, proxy } from 'aws-serverless-express';
 import app from './config';
 
